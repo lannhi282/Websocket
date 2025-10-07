@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>💬 Messenger Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="chat">
+      <div id="header">💬 WebSocket Messenger</div>
+
+      <div id="login">
+        <input id="nameInput" placeholder="Nhập tên của bạn..." />
+        <button onclick="joinChat()">Vào phòng</button>
+      </div>
+
+      <div id="chatBox" style="display: none">
+        <div id="messages"></div>
+        <div class="input-box">
+          <input id="msgInput" placeholder="Nhập tin nhắn..." />
+          <button onclick="sendMessage()">Gửi</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
